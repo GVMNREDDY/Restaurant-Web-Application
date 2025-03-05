@@ -1,0 +1,469 @@
+
+@media screen and (max-width: 600px) and (min-width:120px) {
+
+    .cartsectionmain {
+        width: 100%;
+        height: 100%;
+        background-image: url("D:\MiNi\react Office Files\mini_project_3\public\AnimatedGifs/chef cooking.gif");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .cartsectionmaindiv {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .cartMainDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .cartItemsDisplay {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Wrapper to pair header and items */
+    .cartPair {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .cartHeaderDiv {
+        width: 100%;
+        height: 6vh;
+        font-size: 1rem;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+        color: black;
+        background-color: #ff6f007d;
+        cursor: pointer;
+        position: relative;
+        color: black;
+        transition: 0.5s;
+        margin-bottom: 1rem;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .cartHeaderDiv::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        background: #ff7000;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+
+    .cartHeaderDiv:hover {
+        text-shadow: 0px 0px 50px rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .cartHeaderDiv:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .cartItemsDiv {
+        width: 100%;
+        font-size: 0.9rem;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .InnerContentCartDiv {
+        width: 60%;
+    }
+
+    .contentDiv {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        /* font-weight: bold; */
+        color: white;
+        background-color: #302b284d;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: antiquewhite; */
+    }
+
+    .contentDiv:hover {
+        background-color: #d0c9c34d;
+        color: black;
+        font-weight: bold;
+    }
+
+    .placeorderdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        /* position: relative; */
+        position: sticky;
+        bottom: 1rem;
+    }
+
+    .btnPlaceOrder {
+        /* position: absolute; */
+        cursor: pointer;
+        height: 6vh;
+        width: 40%;
+        border: 5px solid rgb(102, 180, 244);
+        box-shadow: 0px 0px 15px 5px rgb(102, 180, 244) inset;
+        border-radius: 5px;
+        /* color: white; */
+        font-weight: lighter;
+        background-color: rgb(142, 185, 199);
+        transition: font-weight 1s ease-in-out;
+    }
+
+    .btnPlaceOrder:hover {
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .cartsectionmain {
+        width: 100%;
+        height: 100%;
+        background-image: url("D:\MiNi\react Office Files\mini_project_3\public\AnimatedGifs/chef cooking.gif");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .cartsectionmaindiv {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .cartMainDiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        gap: 0.5rem;
+    }
+
+    .cartItemsDisplay {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: first baseline;
+        flex-wrap: wrap;
+        /* border: 2px solid; */
+    }
+
+    /* Wrapper to pair header and items */
+    .cartPair {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: ; */
+        /* align-items: center; */
+        width: 40%; 
+        margin-bottom: 1rem;
+        /* border: 2px solid; */
+    }
+
+    .cartHeaderDiv {
+        width: 100%;
+        height: 6vh;
+        font-size: 1rem;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+        color: black;
+        background-color: #ff6f007d;
+        cursor: pointer;
+        position: relative;
+        color: black;
+        transition: 0.5s;
+        margin-bottom: 1rem;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .cartHeaderDiv::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        background: #ff7000;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+
+    .cartHeaderDiv:hover {
+        text-shadow: 0px 0px 50px rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .cartHeaderDiv:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .cartItemsDiv {
+        width: 100%;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .InnerContentCartDiv {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contentDiv {
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        color: white;
+        font-weight: bold;
+        background-color: #302b284d;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contentDiv:hover {
+        background-color: #d0c9c34d;
+        color: black;
+        font-weight: bold;
+    }
+
+    .placeorderdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* background-color: red; */
+        /* position: relative; */
+        position: sticky;
+        bottom: 1rem;
+    }
+
+    .btnPlaceOrder {
+        /* position: absolute; */
+        cursor: pointer;
+        height: 6vh;
+        width: 40%;
+        border: 5px solid rgb(102, 180, 244);
+        box-shadow: 0px 0px 15px 5px rgb(102, 180, 244) inset;
+        border-radius: 5px;
+        /* color: white; */
+        font-weight: lighter;
+        background-color: rgb(142, 185, 199);
+        transition: font-weight 1s ease-in-out;
+    }
+
+    .btnPlaceOrder:hover {
+        font-weight: bolder;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .cartsectionmain {
+        width: 100%;
+        /* height: 100%; */
+        background-image: url("D:\MiNi\react Office Files\mini_project_3\public\AnimatedGifs/chef cooking.gif");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .cartsectionmaindiv {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cartMainDiv {
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        gap: 0.5rem;
+    }
+
+    .cartItemsDisplay {
+        width: 100%;
+        /* height: 50vh; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 2px solid; */
+    }
+
+    /* Wrapper to pair header and items */
+    .cartPair {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 19%; 
+        margin-bottom: 1rem;
+        /* border: 2px solid; */
+    }
+
+    .cartHeaderDiv {
+        width: 100%;
+        height: 6vh;
+        font-size: 1rem;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+        color: black;
+        /* background-color: #ff6f007d; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        color: black;
+        transition: 0.5s;
+        margin-bottom: 1rem;
+    }
+
+    .cartHeaderDiv::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        background: #ff7000;
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+
+    .cartHeaderDiv:hover {
+        text-shadow: 0px 0px 50px rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .cartHeaderDiv:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    .cartItemsDiv {
+        width: 100%;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .InnerContentCartDiv {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contentDiv {
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        color: white;
+        font-weight: bold;
+        background-color: #302b284d;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contentDiv:hover {
+        background-color: #d0c9c34d;
+        color: black;
+        font-weight: bold;
+    }
+
+    .placeorderdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        bottom: 3rem;
+    }
+
+    .btnPlaceOrder {
+        cursor: pointer;
+        height: 6vh;
+        width: 20%;
+        border: 5px solid rgb(171, 255, 242);
+        box-shadow: 0px 0px 10px 5px rgb(171, 255, 242) inset;
+        border-radius: 5px;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+        background-color: rgb(142, 185, 199);
+        transition: font-weight 1s ease-in-out;
+    }
+
+    .btnPlaceOrder:hover {
+        font-weight: bolder;
+    }
+}
+
+.crossBar {
+    background-color: grey;
+    height: 4vh;
+    padding-bottom: .45rem;
+    border-radius: 10px;
+}
+
+.crossBar:hover {
+    background-color: red;
+}

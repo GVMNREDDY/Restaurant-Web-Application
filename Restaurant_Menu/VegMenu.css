@@ -1,0 +1,726 @@
+@media screen and (max-width: 600px) and (min-width:120px) {
+
+    .divclassVegMenu {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .headeritem {
+        z-index: 15;
+        color: #fe0000;
+        font-size: .75rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        top: -.75rem;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .headeritem:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+    .headeritem:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .headerfileInVeg {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0px 0px 20px 10px whitesmoke;
+        background-color: black;
+        color: white;
+    }
+
+    .divselectionNonveg {
+        font-size: .75rem;
+        font-weight: bolder;
+        align-content: center;
+        color: rgb(241, 206, 206);
+        height: 8vh;
+        width: 40%;
+    }
+
+    .divVegStarters {
+        /* background-color: red; */
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        z-index: -5;
+    }
+
+    .divVegItems {
+        box-sizing: border-box;
+        position: relative;
+        width: 80%;
+        height: 50vh;
+        /* border: 1px solid; */
+        margin: .5rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 2px;
+        box-shadow: 0px 0px 30px 10px grey;
+        z-index: 1;
+    }
+
+    .nameofitem {
+        font-size: 1.5rem;
+        position: relative;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .nameofitem::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fbff00;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .divVegItems:hover .nameofitem::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .imageclass {
+        position: absolute;
+        z-index: 2;
+        width: 80%;
+        height: 40vh;
+        filter: opacity(100%);
+        transition: filter .5s ease-in-out;
+    }
+
+    .divVegItems:hover .imageclass {
+        filter: opacity(50%);
+    }
+
+    .itemdiv {
+        position: absolute;
+        height: 50%;
+        width: 80%;
+        z-index: 3;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.699);
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .classbtndiv {
+        position: absolute;
+        width: 100%;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listdivheader {
+        width: 60%;
+        overflow-y: scroll;
+        /* border: 2px solid; */
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .liststyletype {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liststyletype:hover {
+        cursor: pointer;
+    }
+
+    .anchorclass {
+        text-decoration: none;
+    }
+
+    .description {
+        /* background-color: red; */
+        width: 100%;
+        overflow: hidden;
+        font-size: .75rem;
+    }
+
+    .btnaddremove {
+        cursor: pointer;
+        bottom: 0;
+        z-index: 4;
+        height: 5vh;
+        width: 20%;
+        border: 2px solid;
+        border-radius: 20px;
+        font-weight: bold;
+        /* color: rgb(230, 230, 230); */
+        background-color: #fe0000;
+        transition: background-color 1s ease-in-out,
+            font-weight .5s ease-in-out;
+    }
+
+    .btnaddremove:hover {
+        z-index: 4;
+        font-weight: bold;
+        background-color: rgb(255, 60, 0);
+        /* color: aliceblue; */
+    }
+
+    .btnCross {
+        z-index: 13;
+        background-color: rgb(128, 128, 128);
+        height: 2.75vh;
+        font-size: 1.5rem;
+        padding-bottom: .45rem;
+        border-radius: 10px;
+        position:fixed;
+        right: .5rem;
+        cursor:pointer;
+        transition: background-color .5s ease-in-out,
+                    color .5s ease-in-out;
+    }
+
+    .btnCross:hover {
+        background-color: rgb(223, 30, 4);
+        color: white;
+    }
+
+    .innerdivclassitemprice {
+        color: red;
+        display: inline;
+    }
+    .CartIcon {
+        z-index: 20;
+        position: fixed;
+        right: 2rem;
+        bottom: 5rem;
+        padding: .5rem;
+        background-color: rgb(255, 0, 0);
+        border-radius: 25%;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width:600px) {
+
+    .divclassVegMenu {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .headeritem {
+        z-index: 15;
+        color: #fe0000;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        top: -.75rem;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .headeritem:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+    .headeritem:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .headerfileInVeg {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0px 0px 20px 10px whitesmoke;
+        background-color: black;
+        color: white;
+    }
+
+    .divselectionNonveg {
+        font-size: 1.25rem;
+        font-weight: bolder;
+        align-content: center;
+        color: rgb(246, 0, 0);
+        text-shadow: 0px 0px 10px rgb(138, 136, 136);
+        height: 8vh;
+        width: 40%;
+    }
+
+    .divVegStarters {
+        /* background-color: red; */
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        z-index: -5;
+    }
+
+    .divVegItems {
+        box-sizing: border-box;
+        position: relative;
+        width: 45%;
+        height: 50vh;
+        /* border: 1px solid; */
+        margin: .5rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 2px;
+        box-shadow: 0px 0px 30px 10px grey;
+        z-index: 1;
+    }
+
+    .nameofitem {
+        font-size: 1.5rem;
+        position: relative;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .nameofitem::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fbff00;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .divVegItems:hover .nameofitem::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .imageclass {
+        position: absolute;
+        z-index: 2;
+        width: 80%;
+        height: 40vh;
+        filter: opacity(100%);
+        transition: filter .5s ease-in-out;
+    }
+
+    .divVegItems:hover .imageclass {
+        filter: opacity(50%);
+    }
+
+    .itemdiv {
+        position: absolute;
+        height: 50%;
+        width: 80%;
+        z-index: 3;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.699);
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .classbtndiv {
+        position: absolute;
+        width: 100%;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listdivheader {
+        width: 50%;
+        overflow-y: scroll;
+        /* border: 2px solid; */
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .liststyletype {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liststyletype:hover {
+        cursor: pointer;
+    }
+
+    .anchorclass {
+        text-decoration: none;
+    }
+
+    .description {
+        /* background-color: red; */
+        width: 100%;
+        overflow: hidden;
+        font-size: .6rem;
+    }
+
+    .btnaddremove {
+        cursor: pointer;
+        bottom: 0;
+        z-index: 4;
+        height: 5vh;
+        width: 20%;
+        border: 2px solid;
+        border-radius: 20px;
+        font-weight: bold;
+        /* color: rgb(230, 230, 230); */
+        background-color: #fe0000;
+        transition: background-color 1s ease-in-out,
+            font-weight .5s ease-in-out;
+    }
+
+    .btnaddremove:hover {
+        z-index: 4;
+        font-weight: bold;
+        background-color: rgb(255, 60, 0);
+        /* color: aliceblue; */
+    }
+
+    .btnCross {
+        z-index: 13;
+        background-color: rgb(128, 128, 128);
+        height: 2.75vh;
+        font-size: 1.5rem;
+        padding-bottom: .45rem;
+        border-radius: 10px;
+        position:fixed;
+        right: .5rem;
+        cursor:pointer;
+        transition: background-color .5s ease-in-out,
+                    color .5s ease-in-out;
+    }
+
+    .btnCross:hover {
+        background-color: rgb(223, 30, 4);
+        color: white;
+    }
+
+    .innerdivclassitemprice {
+        color: red;
+        display: inline;
+    }
+    .CartIcon {
+        z-index: 20;
+        position: fixed;
+        right: 2rem;
+        bottom: 5rem;
+        padding: .5rem;
+        background-color: rgb(255, 0, 0);
+        border-radius: 25%;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .divclassVegMenu {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    }
+
+    .headeritem {
+        z-index: 15;
+        color: #fe0000;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        top: -.75rem;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .headeritem:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .headeritem:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .headerfileInVeg {
+        width: 96vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid; */
+        box-shadow: 0px 0px 20px 10px whitesmoke;
+        background-color: black;
+        color: white;
+    }
+
+    .divselectionNonveg {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        align-content: center;
+        color: rgb(241, 206, 206);
+        /* border: 2px solid; */
+        height: 8vh;
+        width: auto;
+        overflow-y: hidden;
+    }
+
+    .divVegStarters {
+        /* background-color: red; */
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 1.5rem;
+        z-index: -5;
+    }
+
+    .divVegItems {
+        box-sizing: border-box;
+        position: relative;
+        width: 30vw;
+        height: 50vh;
+        /* border: 1px solid; */
+        margin: .5rem;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 2px;
+        box-shadow: 0px 0px 30px 10px grey;
+        z-index: 1;
+    }
+
+    .nameofitem {
+        font-size: 1.5rem;
+        position: relative;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .nameofitem::after {
+        content: '';
+        position: absolute;
+        width: 15vw;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fbff00;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .divVegItems:hover .nameofitem::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .imageclass {
+        position: absolute;
+        z-index: 2;
+        width: 20vw;
+        height: 40vh;
+        filter: opacity(50%);
+        transition: filter .5s ease-in-out;
+    }
+
+    .divVegItems:hover .imageclass {
+        filter: opacity(100%);
+    }
+
+    .itemdiv {
+        position: absolute;
+        height: 25vh;
+        z-index: 3;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.544);
+        /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    }
+
+    .classbtndiv {
+        position: absolute;
+        width: 25vw;
+        /* background-color: burlywood; */
+        bottom: 1rem;
+        display: flex;
+        /* background-color: red; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listdivheader {
+        width: 30vw;
+        /* border: 2px solid; */
+    }
+
+    .liststyletype {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .liststyletype:hover {
+        cursor: pointer;
+    }
+
+    .anchorclass {
+        text-decoration: none;
+    }
+
+    .description {
+        /* background-color: red; */
+        width: 25vw;
+        overflow-y: hidden;
+        font-size: small;
+    }
+
+    .btnaddremove {
+        cursor: pointer;
+        bottom: 0;
+        z-index: 4;
+        height: 5vh;
+        width: 5vw;
+        border: 2px solid;
+        border-radius: 20px;
+        font-weight: bold;
+        /* color: rgb(230, 230, 230); */
+        background-color: #fe0000;
+        transition: background-color 1s ease-in-out,
+            font-weight .5s ease-in-out;
+    }
+
+    .btnaddremove:hover {
+        z-index: 4;
+        font-weight: bold;
+        background-color: rgb(255, 60, 0);
+        /* color: aliceblue; */
+    }
+
+    .btnCross {
+        z-index: 12;
+        background-color: rgb(128, 128, 128);
+        height: 5%;
+        width: 2.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        font-size: 2rem;
+        position: fixed;
+        right: 0;
+        border-radius: 10px;
+        transition: background-color .5s ease-in-out,
+            color .5s ease-in-out;
+    }
+
+    .btnCross:hover {
+        background-color: rgb(223, 30, 4);
+        color: white;
+    }
+
+    .innerdivclassitemprice {
+        /* background-color: red; */
+        display: inline;
+    }
+
+    .CartIcon {
+        z-index: 20;
+        position: fixed;
+        right: 5rem;
+        bottom: 5rem;
+        padding: .5rem;
+        background-color: rgb(255, 0, 0);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .CartIcon:hover{
+        box-shadow: 0px 0px 50px 15px whitesmoke;
+    }
+}
